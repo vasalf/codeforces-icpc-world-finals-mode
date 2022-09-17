@@ -1,6 +1,6 @@
 {
-  "name": "Codeforces ICPC World Finals",
-  "description": "Hides the test number in Codeforces verdict",
+  "name": "Codeforces ICPC WF Mode",
+  "description": "Hides the test number on Codeforces Status page.",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
