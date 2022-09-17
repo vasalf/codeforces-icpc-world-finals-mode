@@ -1,0 +1,12 @@
+{
+  "name": "Codeforces ICPC World Finals",
+  "description": "Hides the test number in Codeforces verdict",
+  "version": "0.5",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
