@@ -1,12 +1,32 @@
 {
   "name": "Codeforces ICPC World Finals",
   "description": "Hides the test number in Codeforces verdict",
-  "version": "0.5",
+  "version": "1.0",
   "manifest_version": 3,
+  "background": {
+      "service_worker": "enabler.js"
+  },
   "content_scripts": [
     {
+      "run_at": "document_start",
       "matches": ["https://codeforces.com/*"],
       "js": ["content-script.js"]
     }
-  ]
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icpc16.png",
+      "32": "/images/icpc32.png",
+       "48": "/images/icpc48.png",
+       "128": "/images/icpc128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icpc16.png",
+    "32": "/images/icpc32.png",
+     "48": "/images/icpc48.png",
+     "128": "/images/icpc128.png"
+  }
 }
