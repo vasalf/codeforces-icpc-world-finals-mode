@@ -1,7 +1,7 @@
 {
   "name": "Codeforces ICPC WF Mode",
   "description": "Hides the test number on Codeforces Status page.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "background": {
       "service_worker": "enabler.js"
